@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <!-- This makes the page auto refresh -->
+	    <!-- <meta http-equiv="refresh" content="5"> -->
+	    <title>Rock Paper Scissors Multi-player Edition</title>
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+	    <div class="wrapper">
+	        <div class="container-fluid">
+	            <div class="jumbotron text-center">
+	                <h1 class="display-1">Rock Paper Scissors</h1>
+	            </div>
+            </div>
+            <div class="container">
+            	<div class='row'>
+            		<div class='col-md-4 offset-md-4 pl-0' id='login-box'>
+	            		<form class="form-inline">
+						  <label class="sr-only" for="login-name">Name</label>
+						  <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="login-name" placeholder="Name">
+						  <button type="submit" class="btn btn-primary" id='login-button'>Login</button>
+						</form>
+	            	</div>
+            	</div>
+            	<div class='row mt-5'>
+            		<div class='col-md-3 border' id='player1-box'>
+	            		<h3 class='display-4 text-center'>Waiting for Player One</h3>
+	            		<div class='rps text-center'></div>
+	            		<div class='row record'>
+	            			<div class='col' id='player1-wins'></div>
+	            			<div class='col' id='player1-losses'></div>
+	            		</div>
+            		</div>
+            		<div class='col-md-3 offset-md-1 border' id='results-box'>
+            		</div>
+            		<div class='col-md-3 offset-md-1 border' id='player2-box'>
+            			<h3 class='display-4 text-center'>Waiting for Player Two</h3>
+            			<div class='rps text-center'></div>
+	            		<div class='row record'>
+	            			<div class='col' id='player2-wins'></div>
+	            			<div class='col' id='player2-losses'></div>
+	            		</div>
+            		</div>
+            	</div>
+	        	<div class='row mt-5'>
+	        		<div class='col-md-8 offset-md-2'>
+		        		<form>
+	        				<div class="form-group">
+						    	<label for="chat-textarea">Chat</label>
+							    <textarea class="form-control" id="chat-textarea" rows="5"></textarea>
+	  						</div>
+	  						<div class='form-group'>
+	  							<input class='form-control' type='text' id='chat-input'>
+	  						</div>
+	  						<button type="submit" class="btn btn-primary" id='chat-button'>Submit</button>
+		        		</form>
+	        		</div>
+	        	</div>
+	        </div>
+        </div>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+	<script src="assets/js/app.js"></script>
+</html>
+
+

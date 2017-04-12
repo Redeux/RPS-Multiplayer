@@ -1,0 +1,19 @@
+.border {
+	border: 2px solid black;
+}
+
+#player1-box,
+#player2-box,
+#results-box {
+	min-height: 15rem;
+	position: relative;
+}
+
+.record {
+	position: absolute;
+	bottom: 0;
+}
+
+.rps a {
+	display: block;
+}
